@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EventGhost Version="1700" Guid="{552127AA-65BA-4C3C-9188-E211C4B8A7F4}" Time="1438713151.57">
+    <Autostart Name="Autostart">
+        <Plugin Identifier="AutoRemote" Guid="{C18A174E-71E3-4C74-9A2B-8653CE9991E1}" File="AutoRemote">
+            gAIoVQpBdXRvUmVtb3RlcQBNGgdYCgAAAEV2ZW50R2hvc3RxAV1xAihYCQAAAEdhbGF4eSBTNXEDWA0AAABnb28uZ2wvM0tTWDE2cQRYjAAAAEFQQTkxYkdFcVljRkJxcmgybjdxWHJBVmJMdmdxeE5sWm52UmhhNTUta0IwaHZSa3ZEMUNGdEtNY3c4NG5BQjZ3NG9NZFJBTDQxdWU4RW81Nzd3YVN5TmVVZlVrZnZJN1NqSXBwNXFWTWk3bzFSdEV0ejlvekFvUDVRcXlYT0FncXNlX3lfYmVzb24wcQVOiU50cQZhWAAAAABxB1hwAAAAQzpcVXNlcnNcU2VhblxEb2N1bWVudHNcU2lkZSBQcm9qZWN0c1xKQVJWSVNcSkFSVklTIC0gUHJvdG90eXBlICh2LiAwLjAxKVxjbWRfTWFjcm9zXEV2ZW50R2hvc3RcQXV0b1JlbW90ZSBGaWxlc3EIiFgtAAAAMS96UzZ2UGVJRXRQeDJSNk9OYkh6bkkwaGJKb0MySkRQM19ndU50LXVmOWNJcQmJiFgSAAAAU2VuZCB0byBFdmVudEdob3N0cQqIaAeIdHELLg==
+        </Plugin>
+        <Action>
+            AutoRemote.RegisterEventGhost(u'Galaxy S5', u'goo.gl/3KSX16', u'APA91bGEqYcFBqrh2n7qXrAVbLvgqxNlZnvRha55-kB0hvRkvD1CFtKMcw84nAB6w4oMdRAL41ue8Eo577waSyNeUfUkfvI7SjIpp5qVMi7o1RtEtz9ozAoP5QqyXOAgqse_y_beson0', u'')
+        </Action>
+        <Plugin Identifier="VLC" Guid="{02929D1C-7567-414C-84D1-F8D71D6FD7B3}" File="VLC">
+            gAJYCQAAAGxvY2FsaG9zdHEATdIEiIdxAS4=
+        </Plugin>
+        <Plugin Identifier="Keyboard" Guid="{59CBD10F-C1D8-4ADB-999B-9B76BA360F1F}" File="Keyboard">
+            gAKIhXEALg==
+        </Plugin>
+    </Autostart>
+    <Macro Name="Start Jarvis">
+        <Event Name="AutoRemote.Message.start" />
+        <Action>
+            System.MonitorPowerOn()
+        </Action>
+        <Action>
+            System.Execute(u'C:\\Users\\Sean\\Documents\\Side Projects\\JARVIS\\JARVIS - Prototype (v. 0.01)\\Jarvis.exe', u'', 0, False, 2, u'', False, False, u'', False, False, False)
+        </Action>
+    </Macro>
+    <Macro Name="Wake Jarvis">
+        <Event Name="AutoRemote.Message.wakeUp" />
+        <Action>
+            System.MuteOff(u'Speakers (Realtek High Definiti')
+        </Action>
+        <Action>
+            Window.SendKeys(u'{Divide}', False)
+        </Action>
+    </Macro>
+    <Macro Name="Set monitor into power-off mode">
+        <Action>
+            System.MonitorPowerOff()
+        </Action>
+        <Action>
+            EventGhost.Wait(5.0)
+        </Action>
+    </Macro>
+    <Folder Name="VLC media player">
+        <Macro Name="Start">
+            <Action>
+                VLC.Start()
+            </Action>
+        </Macro>
+        <Macro Name="Quit">
+            <Action>
+                VLC.Quit()
+            </Action>
+        </Macro>
+        <Macro Name="Play">
+            <Action>
+                VLC.Play()
+            </Action>
+        </Macro>
+        <Macro Name="Pause">
+            <Action>
+                VLC.Pause()
+            </Action>
+        </Macro>
+        <Macro Name="Stop">
+            <Action>
+                VLC.Stop()
+            </Action>
+        </Macro>
+        <Macro Name="Fast Forward">
+            <Action>
+                VLC.FastForward()
+            </Action>
+        </Macro>
+        <Macro Name="Fast Rewind">
+            <Action>
+                VLC.FastRewind()
+            </Action>
+        </Macro>
+        <Macro Name="Play Faster">
+            <Action>
+                VLC.PlayFaster()
+            </Action>
+        </Macro>
+        <Macro Name="Play Slower">
+            <Action>
+                VLC.PlaySlower()
+            </Action>
+        </Macro>
+        <Macro Name="Play Normal">
+            <Action>
+                VLC.PlayNormal()
+            </Action>
+        </Macro>
+        <Macro Name="Seek">
+            <Action>
+                VLC.Seek()
+            </Action>
+        </Macro>
+        <Macro Name="Fullscreen">
+            <Action>
+                VLC.Fullscreen()
+            </Action>
+        </Macro>
+        <Macro Name="Next Playlist Item">
+            <Action>
+                VLC.NextPlaylistItem()
+            </Action>
+        </Macro>
+        <Macro Name="Previous Playlist Item">
+            <Action>
+                VLC.PreviousPlaylistItem()
+            </Action>
+        </Macro>
+        <Macro Name="Next Title">
+            <Action>
+                VLC.NextTitle()
+            </Action>
+        </Macro>
+        <Macro Name="Previous Title">
+            <Action>
+                VLC.PreviousTitle()
+            </Action>
+        </Macro>
+        <Macro Name="Next Chapter">
+            <Action>
+                VLC.NextChapter()
+            </Action>
+        </Macro>
+        <Macro Name="Previous Chapter">
+            <Action>
+                VLC.PreviousChapter()
+            </Action>
+        </Macro>
+        <Macro Name="Current Playlist Status">
+            <Action>
+                VLC.CurrentPlaylistStatus()
+            </Action>
+        </Macro>
+        <Macro Name="Stream Info">
+            <Action>
+                VLC.StreamInfo()
+            </Action>
+        </Macro>
+        <Macro Name="Show Playlist">
+            <Action>
+                VLC.ShowPlaylist()
+            </Action>
+        </Macro>
+        <Macro Name="Clear Playlist">
+            <Action>
+                VLC.ClearPlaylist()
+            </Action>
+        </Macro>
+        <Macro Name="Volume Up">
+            <Action>
+                VLC.VolumeUp()
+            </Action>
+        </Macro>
+        <Macro Name="Volume Down">
+            <Action>
+                VLC.VolumeDown()
+            </Action>
+        </Macro>
+        <Macro Name="My Command">
+            <Action>
+                VLC.MyCommand()
+            </Action>
+        </Macro>
+        <Macro Name="Simulate hotkey press">
+            <Action>
+                VLC.SimulateKey()
+            </Action>
+        </Macro>
+        <Macro Name="Get list of hotkeys">
+            <Action>
+                VLC.GetHotkeys()
+            </Action>
+        </Macro>
+        <Macro Name="Get some info">
+            <Action>
+                VLC.GetSomeInfo()
+            </Action>
+        </Macro>
+        <Macro Name="Get time">
+            <Action>
+                VLC.GetTime()
+            </Action>
+        </Macro>
+        <Macro Name="Get length">
+            <Action>
+                VLC.GetLength()
+            </Action>
+        </Macro>
+        <Macro Name="Next audiotrack">
+            <Action>
+                VLC.NextAtrack()
+            </Action>
+        </Macro>
+        <Macro Name="Previous audiotrack">
+            <Action>
+                VLC.PreviousAtrack()
+            </Action>
+        </Macro>
+        <Macro Name="Next subtitles">
+            <Action>
+                VLC.NextStrack()
+            </Action>
+        </Macro>
+        <Macro Name="Previous subtitles">
+            <Action>
+                VLC.PreviousStrack()
+            </Action>
+        </Macro>
+        <Macro Name="Help">
+            <Action>
+                VLC.Help()
+            </Action>
+        </Macro>
+        <Folder Name="DVD menu control">
+            <Macro Name="Go to the DVD menu">
+                <Action>
+                    VLC.KeyDiscMenu()
+                </Action>
+            </Macro>
+            <Macro Name="Navigate up">
+                <Action>
+                    VLC.KeyNavUp()
+                </Action>
+            </Macro>
+            <Macro Name="Navigate down">
+                <Action>
+                    VLC.KeyNavDown()
+                </Action>
+            </Macro>
+            <Macro Name="Navigate left">
+                <Action>
+                    VLC.KeyNavLeft()
+                </Action>
+            </Macro>
+            <Macro Name="Navigate right">
+                <Action>
+                    VLC.KeyNavRight()
+                </Action>
+            </Macro>
+            <Macro Name="Activate">
+                <Action>
+                    VLC.KeyNavActivate()
+                </Action>
+            </Macro>
+        </Folder>
+    </Folder>
+    <Macro Name="Emulate Keystrokes: {Win+Left}">
+        <Event Name="AutoRemote.Message.WinLeft" />
+        <Action>
+            Window.SendKeys(u'{Win+Left}', False)
+        </Action>
+    </Macro>
+    <Macro Name="Emulate Keystrokes: {Win+Right}">
+        <Event Name="AutoRemote.Message.WinRight" />
+        <Action>
+            Window.SendKeys(u'{Win+Right}', False)
+        </Action>
+    </Macro>
+    <Macro Name="Emulate Keystrokes: {Win+Up}">
+        <Event Name="AutoRemote.Message.WinUp" />
+        <Action>
+            Window.SendKeys(u'{Win+Up}', False)
+        </Action>
+    </Macro>
+    <Macro Name="Emulate Keystrokes: {Win+Down}">
+        <Event Name="AutoRemote.Message.WinDown" />
+        <Action>
+            Window.SendKeys(u'{Win+Down}', False)
+        </Action>
+    </Macro>
+    <Macro Name="Emulate Keystrokes: {Win+D}">
+        <Event Name="AutoRemote.Message.WinD" />
+        <Action>
+            Window.SendKeys(u'{Win+D}', False)
+        </Action>
+    </Macro>
+    <Macro Name="Sytem Unlock" Expanded="True">
+        <Event Name="AutoRemote.Message.Unlock" />
+        <Action>
+            System.Execute(u'C:\\Windows\\System32\\tscon.exe', u'1 /dest:console', 0, False, 2, u'', False, True, u'', False, True, False)
+        </Action>
+    </Macro>
+</EventGhost>

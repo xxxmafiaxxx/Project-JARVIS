@@ -1,0 +1,17 @@
+To Do:
+- Install DNS 12
+- Install Vocola
+- Install Balabolka
+- Restore Jarvis
+- Install USB-UIRT
+- Install Girder or equivalent USB-UIRT controller
+	/ Find cracked version if necessary (careful, many may have viruses)
+
+- Install EventGhost
+
+Work on integrating software to implement the following process flow:
+	- Voice Command Recognized using DNS & Vocola / Natlink
+	- Command Triggers a Hotkey (Vocola / Natlink)
+	- Hotkey triggers AutoIt script OR EventGhost macro -> perform task
+	- (optional) EventGhost / Girder send IR command thru USB-UIRT
+

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands version="2.2.0.7" space="preserve" date="3/29/2016 12:00:00 AM">
+    <commandGroup open="False" name="Vox Commands" enabled="True" prefix="" priority="0" requiredProcess="" description="">
+        <command id="0" name="Don't Listen" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>VC.Standby</cmdType>
+                <params />
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>ignore me,take a hike,don't listen,buzz off,stand by, stop listening</phrase>
+        </command>
+        <command id="18" name="Listen" enabled="true" alwaysOn="True" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>VC.On</cmdType>
+                <params />
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysDown</cmdType>
+                <params>
+                    <param>{CONTROL+F2}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysUp</cmdType>
+                <params>
+                    <param>{CONTROL+F2}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>listen up, start listening, pay attention</phrase>
+        </command>
+        <command id="25" name="Option" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>VC.Option</cmdType>
+                <params />
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>Option,Select Option</phrase>
+            <payloadRange>1,8</payloadRange>
+        </command>
+        <command id="31" name="stop scrolling" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>nothing</cmdType>
+                <params>
+                    <param>nothing</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>stop scrolling</phrase>
+        </command>
+        <command id="35" name="Vox Off" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>VC.Off</cmdType>
+                <params />
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>vox commando off</phrase>
+        </command>
+    </commandGroup>
+    <commandGroup open="True" name="Jarvis" enabled="True" prefix="" priority="0" requiredProcess="" description="">
+        <command id="278" name="(Re)Start Jarvis" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{ESCAPE}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>Launch</cmdType>
+                <params>
+                    <param>C:\Users\Sean\Documents\Side Projects\JARVIS - (v. 1.1)\Jarvis.exe</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>wake up buddy, are you there, talk to me</phrase>
+        </command>
+        <command id="326" name="intro" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.KeysDown</cmdType>
+                <params>
+                    <param>{CONTROL+F1}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysUp</cmdType>
+                <params>
+                    <param>{CONTROL+F1}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>introduce yourself, what are you</phrase>
+        </command>
+        <command id="314" name="time" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.KeysDown</cmdType>
+                <params>
+                    <param>{CONTROL+F11}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysUp</cmdType>
+                <params>
+                    <param>{CONTROL+F11}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>what time is it, what's the time</phrase>
+        </command>
+        <command id="313" name="xboxtoggle" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+1}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>turn the xbox on, turn the xbox off, turn off the xbox, turn on the xbox, toggle xbox power</phrase>
+        </command>
+        <command id="286" name="bothtoggle" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+2}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>turn on the home theater, turn everything on, power up, power down</phrase>
+        </command>
+        <command id="293" name="emersononCC" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.KeysDown</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+3}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysUp</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+3}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>turn on the chromecast</phrase>
+        </command>
+        <command id="261" name="emersontoggle" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+3}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>turn the small tv on, turn the small tv off, turn on the small tv, turn off the small tv</phrase>
+        </command>
+        <command id="268" name="panasonictoggle" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+5}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>turn the main tv on, turn the main tv off, screen 1 on, screen 1 off, turn on the main tv, turn off the main tv, turn on the big tv, turn off the big tv, turn the big tv off, turn the big tv on</phrase>
+        </command>
+        <command id="308" name="Reset" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+7}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>reset, reset screens, reset matrix</phrase>
+        </command>
+        <command id="269" name="recompile" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.KeysDown</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+0}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysUp</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+0}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>recompile, do a rebuild, perform a rebuild</phrase>
+        </command>
+        <command id="288" name="cast netflix" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <phrase>cast netflix</phrase>
+        </command>
+        <command id="263" name="Screen 1 Volume Up" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>Sound.PlayWav</cmdType>
+                <params>
+                    <param>H:\Side Projects\JARVIS - Prototype (v. 0.01)\Speech Files\Yes_sir.wav</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>EventGhost.Send</cmdType>
+                <params>
+                    <param>VolUp</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>volume up, turn up the volume, the tv is too quiet</phrase>
+        </command>
+        <command id="302" name="Screen 1 Volume Down" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>Sound.PlayWav</cmdType>
+                <params>
+                    <param>H:\Side Projects\JARVIS - Prototype (v. 0.01)\Speech Files\Yes_sir.wav</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>EventGhost.Send</cmdType>
+                <params>
+                    <param>VolDown</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>turn down the volume, the tv is too loud, volume down</phrase>
+        </command>
+        <command id="267" name="XboxScreen1" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+7}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>xbox screen one, xbox on screen one, bring up the xbox on main screen, I want to play xbox</phrase>
+        </command>
+        <command id="279" name="XboxScreen2" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+2}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>xbox screen two, xbox on screen two, bring up the xbox on the small tv</phrase>
+        </command>
+        <command id="284" name="CCScreen1" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+8}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>chromecast screen one, chromecast on screen 1, bring up the chromecast on main screen, I want to watch chromecast</phrase>
+        </command>
+        <command id="307" name="CCScreen2" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+3}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>chromecast screen two, chromecast on screen two, bring up the chromecast on the small tv</phrase>
+        </command>
+        <command id="277" name="PCScreen1" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+9}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>pc screen one, pc on screen 1, bring up the pc on main screen, I want to play pc games</phrase>
+        </command>
+        <command id="294" name="PCScreen2" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+4}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>pc screen two, pc on screen two, bring up the pc on the small tv</phrase>
+        </command>
+        <command id="296" name="PS4Screen1" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+ALT+6}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>ps4 screen one, ps4 on screen 1, bring up ps4 on main screen, I want to play ps4</phrase>
+        </command>
+        <command id="310" name="PS4Screen2" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+1}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>ps4 screen two, ps4 on screen two, bring up the ps4 on the small tv</phrase>
+        </command>
+        <command id="305" name="Run AutoBing" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+5}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>run AutoBing</phrase>
+        </command>
+        <command id="304" name="Start VPN" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+6}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>start VPN, start the VPN, I want to download something, go private, hide my internet activity</phrase>
+        </command>
+        <command id="285" name="Start Netflix" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.KeysDown</cmdType>
+                <params>
+                    <param>{CONTROL+F3}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>InputKeys.KeysUp</cmdType>
+                <params>
+                    <param>{CONTROL+F3}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>Start Netflix</phrase>
+        </command>
+        <command id="301" name="SEL_DEMO" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>InputKeys.Send</cmdType>
+                <params>
+                    <param>{CONTROL+SHIFT+8}</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>show them what you can do, time to show off</phrase>
+        </command>
+    </commandGroup>
+    <commandGroup open="False" name="Show Help" enabled="True" prefix="" priority="0" requiredProcess="" description="">
+        <command id="262" name="Show help" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>Help.ShowAll</cmdType>
+                <params />
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>TTS.Speak</cmdType>
+                <params>
+                    <param>These are all of the voice commands for this configuration.</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>Show help, What can I say</phrase>
+        </command>
+        <command id="260" name="Show active commands" enabled="true" alwaysOn="False" confirm="False" requiredConfidence="0" loop="False" loopDelay="0" loopMax="0" description="">
+            <action>
+                <cmdType>Help.ShowEnabled</cmdType>
+                <params />
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <action>
+                <cmdType>TTS.Speak</cmdType>
+                <params>
+                    <param>These are voice commands in groups that are enabled.</param>
+                </params>
+                <cmdRepeat>1</cmdRepeat>
+            </action>
+            <phrase>Show</phrase>
+            <phrase optional="true">me, us</phrase>
+            <phrase optional="true">the</phrase>
+            <phrase>active, enabled</phrase>
+            <phrase optional="true">voice</phrase>
+            <phrase>commands</phrase>
+        </command>
+    </commandGroup>
+</VoiceCommands>
