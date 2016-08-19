@@ -16,17 +16,29 @@
 #ce ----------------------------------------------------------------------------
 
 HotKeySet("^{F1}", "intro")
+
 HotKeySet("^{F2}", "what_can_i_do")
+
 HotKeySet("^{F3}", "netflix")
+
 HotKeySet("^{F4}", "shut_down")
+
 HotKeySet("^{F6}", "cast_netflix_specific")
+
 HotKeySet("^{F8}", "start_plex")
+
 HotKeySet("^{F7}", "stop_casting")
+
 HotKeySet("^{F9}", "cast_plex")
+
 HotKeySet("^{F10}", "cast_netflix")
+
 HotKeySet("^{F11}", "speak_time")
+
 HotKeySet("^{F12}", "quit_plex")
+
 HotKeySet("^~", "update_plex")
+
 HotKeySet("^!0", "recompile")
 
 HotKeySet("^!1", "eg_XboxToggle")
@@ -38,6 +50,7 @@ HotKeySet("^!6", "eg_PS4Screen1")
 HotKeySet("^!7", "eg_XboxScreen1")
 HotKeySet("^!8", "eg_CCScreen1")
 HotKeySet("^!9", "eg_PCScreen1")
+
 HotKeySet("^+1", "eg_PS4Screen2")
 HotKeySet("^+2", "eg_XboxScreen2")
 HotKeySet("^+3", "eg_CCScreen2")

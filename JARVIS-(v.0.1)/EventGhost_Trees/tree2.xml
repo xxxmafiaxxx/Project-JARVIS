@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<EventGhost Version="1700" Guid="{CDB1653C-4C95-447C-A47A-3786036135E5}" Time="1457198760.54">
-    <Autostart Name="Autostart">
+<EventGhost Version="1710" Guid="{7448559E-5B5B-4C86-BB39-BA46B948FF90}" Time="1471550523.88">
+    <Autostart Name="Autostart" Expanded="True">
         <Plugin Identifier="USB_UIRT" Guid="{36FD4F40-653C-4626-97CC-BE363C05F933}" File="USB-UIRT">
             gAIoiIiJiXRxAC4=
         </Plugin>
         <Plugin Identifier="AutoRemote" Guid="{C18A174E-71E3-4C74-9A2B-8653CE9991E1}" File="AutoRemote">
             gAIoVQpBdXRvUmVtb3RlcQBNGgdYDQAAAEV2ZW50R2hvc3QtUENxAV1xAihYDwAAAFNhbXN1bmcgU01HOTAwVnEDWA0AAABnb28uZ2wvM0tTWDE2cQRYjAAAAEFQQTkxYkdFcVljRkJxcmgybjdxWHJBVmJMdmdxeE5sWm52UmhhNTUta0IwaHZSa3ZEMUNGdEtNY3c4NG5BQjZ3NG9NZFJBTDQxdWU4RW81Nzd3YVN5TmVVZlVrZnZJN1NqSXBwNXFWTWk3bzFSdEV0ejlvekFvUDVRcXlYT0FncXNlX3lfYmVzb24wcQVYAAAAAHEGiU50cQdhWAwAAAA3NS4xLjE3MS4xNjVxCFg2AAAASDpcU2lkZSBQcm9qZWN0c1xKQVJWSVMgLSBQcm90b3R5cGUgKHYuIDAuMDEpXEFSIEZpbGVzcQmIVQBxComIWBIAAABTZW5kIHRvIEV2ZW50R2hvc3RxC4hoBol0cQwu
-        </Plugin>
-        <Plugin Identifier="Keyboard" Guid="{59CBD10F-C1D8-4ADB-999B-9B76BA360F1F}" File="Keyboard">
-            gAKIhXEALg==
         </Plugin>
         <Plugin Identifier="Webserver" Guid="{E4305D8E-A3D3-4672-B06E-4EA1F0F6C673}" File="Webserver">
             gAIoWAQAAABIVFRQcQBNuhNYAAAAAHEBWAoAAABFdmVudEdob3N0cQJoAWgBfXEDiVgBAAAALHEEWAIAAAA7O3EFaAFoAYl0cQYu
@@ -28,7 +25,7 @@
         </Macro>
     </Folder>
     <Folder Name="IR" Expanded="True">
-        <Folder Name="HT Macros" Expanded="True">
+        <Folder Name="HT Macros">
             <Macro Name="HT: ShutdownBoth">
                 <Action>
                     USB_UIRT.TransmitIR(u'0000 006F 0022 0002 0155 00AA 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0016 0015 0040 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0040 0016 0015 0015 0040 0016 0040 0015 0040 0015 05DC 0154 0056 0015 0E1F', 4, 0)
@@ -40,7 +37,7 @@
                     USB_UIRT.TransmitIR(u'0000 006D 0022 0002 015B 00AE 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0042 0015 0017 0015 0017 0015 0017 0015 0042 0015 0042 0015 0017 0015 0042 0015 0042 0015 0042 0015 0042 0015 0042 0015 0042 0015 0017 0015 0042 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0042 0015 0017 0015 0042 0015 0042 0015 06A2 015C 0057 0015 06A2', 4, 0)
                 </Action>
             </Macro>
-            <Macro Name="HT: BothOn" Expanded="True">
+            <Macro Name="HT: BothOn">
                 <Event Name="AutoRemote.Message.Home" />
                 <Event Name="Main.eg.HomeTheaterToggle" />
                 <Action>
@@ -183,7 +180,7 @@
             </Macro>
         </Folder>
         <Folder Name="HDMI Matrix" Expanded="True">
-            <Macro Name="USB-UIRT: Reset HDMI Matrix" Expanded="True">
+            <Macro Name="USB-UIRT: Reset HDMI Matrix">
                 <Event Name="AutoRemote.Message.reset" />
                 <Event Name="Main.eg.reset" />
                 <Action>
@@ -193,58 +190,58 @@
             <Folder Name="Screen1">
                 <Macro Name="USB-UIRT: HDMI Matrix - 1-1" Expanded="True">
                     <Event Name="AutoRemote.Message.1x1" />
-                    <Event Name="Main.eg.XboxScreen1" />
+                    <Event Name="Main.eg.1x1" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0156 00AB 0015 0017 0015 0015 0016 0015 0015 0017 0015 0015 0016 0015 0015 0016 0015 0016 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0015 0015 0040 0016 0016 0015 0040 0016 0040 0015 0016 0016 0015 0015 0017 0015 0040 0015 0017 0015 0040 0015 05E5 0155 0056 0015 0E35', 4, 0)
                     </Action>
                 </Macro>
                 <Macro Name="USB-UIRT: HDMI Matrix - 1-2" Expanded="True">
                     <Event Name="AutoRemote.Message.1x2" />
-                    <Event Name="Main.eg.CCScreen1" />
+                    <Event Name="Main.eg.1x2" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0156 00AB 0015 0017 0015 0015 0016 0016 0015 0017 0015 0016 0016 0015 0015 0017 0015 0015 0016 0040 0015 0040 0015 0040 0016 0041 0015 0041 0015 0041 0016 0040 0015 0040 0015 0016 0015 0040 0015 0041 0016 0041 0015 0040 0015 0017 0015 0016 0016 0016 0015 0040 0016 0016 0015 0017 0015 0016 0016 0015 0015 0040 0016 0040 0015 0041 0015 05E6 0156 0056 0015 0E38', 4, 0)
                     </Action>
                 </Macro>
                 <Macro Name="USB-UIRT: HDMI Matrix - 1-3" Expanded="True">
                     <Event Name="AutoRemote.Message.1x3" />
-                    <Event Name="Main.eg.PCScreen1" />
+                    <Event Name="Main.eg.1x3" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0155 00AB 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0016 0015 0015 0016 0015 0015 0040 0016 0040 0015 0015 0016 0040 0015 0015 0016 0040 0015 0040 0015 0040 0016 0015 0015 0016 0015 0040 0015 0016 0015 0040 0015 05E4 0155 0056 0015 0E34', 4, 0)
                     </Action>
                 </Macro>
                 <Macro Name="USB-UIRT: HDMI Matrix - 1-4" Expanded="True">
                     <Event Name="AutoRemote.Message.1x4" />
-                    <Event Name="Main.eg.PS4Screen1" />
+                    <Event Name="Main.eg.1x4" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0155 00AB 0015 0017 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0016 0015 0040 0015 0040 0016 0015 0015 0040 0016 0015 0015 0016 0015 0015 0016 0040 0015 0015 0016 0015 0015 0040 0016 0015 0015 0040 0016 0040 0015 0040 0015 05E4 0155 0056 0015 0E34', 4, 0)
                     </Action>
                 </Macro>
             </Folder>
-            <Folder Name="Screen2">
-                <Macro Name="USB-UIRT: HDMI Matrix - 2-1">
+            <Folder Name="Screen2" Expanded="True">
+                <Macro Name="USB-UIRT: HDMI Matrix - 2-1" Expanded="True">
                     <Event Name="AutoRemote.Message.2x1" />
-                    <Event Name="Main.eg.XboxScreen2" />
+                    <Event Name="Main.eg.2x1" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0156 00AB 0015 0017 0015 0015 0016 0016 0015 0016 0015 0016 0016 0015 0015 0016 0015 0016 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0015 0015 0017 0015 0040 0015 0040 0016 0015 0015 0040 0016 0015 0015 0016 0015 0040 0015 0040 0016 0015 0015 0016 0015 0040 0015 0016 0015 0040 0015 05E4 0155 0056 0015 0E34', 4, 0)
                     </Action>
                 </Macro>
-                <Macro Name="USB-UIRT: HDMI Matrix - 2-2">
+                <Macro Name="USB-UIRT: HDMI Matrix - 2-2" Expanded="True">
                     <Event Name="AutoRemote.Message.2x2" />
-                    <Event Name="Main.eg.CCScreen2" />
+                    <Event Name="Main.eg.2x2" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0155 00AB 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0016 0015 0015 0016 0015 0015 0040 0016 0040 0015 0015 0016 0015 0015 0016 0015 0040 0015 0040 0016 0040 0015 0015 0016 0015 0015 0040 0016 0040 0015 0040 0015 05E3 0155 0056 0015 0E31', 4, 0)
                     </Action>
                 </Macro>
-                <Macro Name="USB-UIRT: HDMI Matrix - 2-3">
+                <Macro Name="USB-UIRT: HDMI Matrix - 2-3" Expanded="True">
+                    <Event Name="Main.eg.2x3" />
                     <Event Name="AutoRemote.Message.2x3" />
-                    <Event Name="Main.eg.PCScreen2" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0000 0022 0156 00AC 0015 0017 0015 0015 0016 0015 0015 0016 0015 0016 0016 0016 0015 0017 0015 0016 0016 0040 0015 0041 0015 0040 0016 0041 0015 0041 0015 0041 0016 0041 0015 0040 0015 0040 0016 0016 0015 0041 0016 0040 0015 0040 0015 0016 0015 0041 0015 0017 0015 0016 0016 0041 0015 0016 0016 0016 0015 0017 0015 0041 0015 0016 0015 0041 0015 0F5B', 4, 0)
                     </Action>
                 </Macro>
-                <Macro Name="USB-UIRT: HDMI Matrix - 2-4">
+                <Macro Name="USB-UIRT: HDMI Matrix - 2-4" Expanded="True">
+                    <Event Name="Main.eg.2x4" />
                     <Event Name="AutoRemote.Message.2x4" />
-                    <Event Name="Main.eg.PS4Screen2" />
                     <Action>
                         USB_UIRT.TransmitIR(u'0000 006E 0022 0002 0156 00AB 0015 0017 0015 0015 0016 0016 0015 0017 0015 0015 0016 0015 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0040 0016 0040 0015 0040 0015 0016 0015 0015 0016 0040 0015 0040 0015 0040 0016 0015 0015 0016 0015 0015 0016 0040 0015 0040 0015 0016 0015 0015 0016 0015 0015 0040 0016 0040 0015 0040 0015 05E5 0155 0056 0015 0E35', 4, 0)
                     </Action>
@@ -332,14 +329,14 @@
             </Macro>
         </Folder>
         <Folder Name="TV - Panasonic">
-            <Macro Name="USB-UIRT: Panasonic Power Toggle" Expanded="True">
+            <Macro Name="USB-UIRT: Panasonic Power Toggle">
                 <Event Name="Main.eg.PanasonicOn" />
                 <Action>
                     USB_UIRT.TransmitIR(u'0000 0071 0000 0032 0080 0041 0010 0011 0010 0031 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0031 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0031 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0011 0010 0031 0010 0011 0010 0031 0010 0031 0010 0031 0010 0031 0010 0011 0010 0011 0010 0031 0010 0011 0010 0031 0010 0031 0010 0031 0010 0031 0010 0011 0010 0031 0010 0D08', 4, 0)
                 </Action>
             </Macro>
         </Folder>
-        <Folder Name="Xbox One">
+        <Folder Name="Xbox One" Expanded="True">
             <Macro Name="USB-UIRT: XboxOne Power Toggle">
                 <Event Name="Main.eg.XboxToggle" />
                 <Event Name="Broadcast.xboxtoggle" />
